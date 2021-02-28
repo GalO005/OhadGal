@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeDev - Posts</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="/js/common.js" defer></script>
+</head>
+
+<body>
+    <div class="posts-en">
+        <header>
+            <a class="logo" href="/index.html"><img src="/media/devlogo2.svg" alt="development"></a>
+            <nav>
+                <ul class="ul-menu">
+                    <li><a class="links" href="/about.html">אודות</a></li>
+                    <li>
+                        <a class="links" href="/client.html">לקוחות</a>
+                    </li>
+                    <li>
+                        <a class="links" href="/service.html">שירות</a>
+                    </li>
+                    <li>
+                        <a class="links" href="/posts.html">פוסטים</a>
+                    </li>
+                    <li>
+                        <a class="links" href="/contact.html">צור קשר</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Give FeedBack!</h1>
+            <div class="input-group">
+                <div class="input-name">
+                    <label for="shem">Name:</label>
+                    <input type="text" id="shem">
+                </div>
+                <div class="textarea-feed">
+                    <textarea id="fdb" cols="50" rows="10"></textarea>
+                </div>
+                <div class="btn-feed">
+                    <button id="sendfeed">Send</button>
+                </div>
+                <div id="errposinpt" data-errshem="Please Enter Your Name" data-errfdb="Please Enter Your FeedBack"></div>
+            </div>
+            <section id="section-posts" class="allposts">
+            </section>
+            <div style="clear: both;"></div>
+            <audio id="clicksound" src="./media/audio/clicksound.mp3"></audio>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="wrap-footer">
+        <footer>
+            <div class="container">
+                <div class="copyrights">
+                    <p>
+                        האתר נבנה על ידי אוהד פישר וגל עוז במסגרת קורס תכנון ופיתוח בסביבת האינטרנט במחלקה למדעי המידע באוניברסיטת בר אילן
+                    </p>
+                    <p>
+                        האתר נצפה בדפדפן כרום
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

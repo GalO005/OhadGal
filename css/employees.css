@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+employee-list {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    border: 0 !important;
+    overflow: hidden;
+    direction: rtl;
+    grid-auto-rows: 13rem;
+    height: 100%;
+}
+
+name,
+role,
+fulladdress,
+city,
+street,
+postcode,
+languages,
+seniority {
+    display: block;
+}
+
+employee {
+    margin: 2rem 2.5rem;
+    box-shadow: 0.5rem 0.5rem 2rem rgb(11 75 110);
+    text-align: center;
+}
+
+name:before {
+    content: 'שם העובד: ';
+    font-weight: bold;
+}
+
+role:before {
+    content: 'תפקיד: ';
+    font-weight: bold;
+}
+
+city:before {
+    content: 'עיר: ';
+    font-weight: bold;
+}
+
+street:before {
+    content: 'רחוב: ';
+    font-weight: bold;
+}
+
+postcode:before {
+    content: 'מיקוד: ';
+    font-weight: bold;
+}
+
+languages:before {
+    content: 'שפות: ';
+    font-weight: bold;
+}
+
+seniority:before {
+    content: 'ותק: ';
+    font-weight: bold;
+}

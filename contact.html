@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/common.css">
+    <script src="/js/common.js" defer></script>
+    <title>WeDev - Contact</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/index.html"><img src="/media/devlogo2.svg" alt="development"></a>
+        <!--Navigation start-->
+        <nav>
+            <ul class="ul-menu">
+                <li><a class="links" href="/about.html">אודות</a></li>
+                <li>
+                    <a class="links" href="/client.html">לקוחות</a>
+                </li>
+                <li>
+                    <a class="links" href="/service.html">שירות</a>
+                </li>
+                <li>
+                    <a class="links" href="/posts.html">פוסטים</a>
+                </li>
+                <li>
+                    <a class="links" href="/contact.html">צור קשר</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Navigation end-->
+    </header>
+    <div id="frmcontact" class="container">
+        <div id="errwedev">
+        </div>
+        <form id="frmcon" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST">
+            <div class="row-a">
+                <div class="frm-input">
+                    <label for="fname">שם פרטי*</label>
+                    <input type="text" name="fname" id="fname" aria-required="true">
+                    <div class="inputfocus"></div>
+                </div>
+                <div class="frm-input">
+                    <label for="lname">שם משפחה*</label>
+                    <input type="text" name="lname" id="lname" aria-required="true">
+                    <div class="inputfocus"></div>
+                </div>
+            </div>
+            <div class="frm-input">
+                <label for="mail">אימייל*</label>
+                <input type="email" name="mail" id="mail" aria-required="true">
+                <div class="inputfocus"></div>
+            </div>
+            <div class="frm-input">
+                <label for="pwd">סיסמא*</label>
+                <input type="password" name="pwd" id="pwd" aria-required="true">
+                <div class="inputfocus"></div>
+            </div>
+            <div class="frm-input">
+                <label for="phone">טלפון*</label>
+                <input type="tel" name="phone" id="phone" aria-required="true">
+                <div class="inputfocus"></div>
+            </div>
+            <div class="frm-input">
+                <p>שמעתי עליכם ב:</p>
+                <div class="frm-input-radio">
+                    <input type="radio" name="heard" id="social" value="socialnetwork">
+                    <label for="social">רשתות חברתיות</label>
+                    <input type="radio" name="heard" id="friends" value="friends">
+                    <label for="friends">חברים</label>
+                    <input type="radio" name="heard" id="others" value="others" checked>
+                    <label for="others">אחר</label>
+                </div>
+            </div>
+            <div class="date-start-project">
+                <div class="dropdown-project">
+                    <label for="project">בחר פרוייקט*</label>
+                    <select name="project" id="project">
+                        <option value="listproj">--רשימת פרויקטים לבחירה--</option>
+                        <option value="landpage">פיתוח אתר תדמיתי</option>
+                        <option value="ecom">פיתוח אתר מסחר</option>
+                        <option value="uxui">תכנון ועיצוב</option>
+                        <option value="appios">פיתוח אפליקציית אפל</option>
+                        <option value="androidapp">פיתוח אפליקציית אנדרואיד</option>
+
+                    </select>
+                    <div class="inputfocus"></div>
+                </div>
+                <div class="frm-input">
+                    <label for="countproj">כמות מבקרים צפויה באתר / אפליקציה*</label>
+                    <input type="number" name="countproj" id="countproj" min="1000" max="5000" disabled>
+                    <div class="inputfocus"></div>
+                </div>
+            </div>
+            <div class="frm-input">
+                <label for="dmeet">תאריך לפגישה*</label>
+                <input type="date" name="dmeet" id="dmeet">
+                <div class="inputfocus"></div>
+            </div>
+            <div class="frm-input">
+                <label for="notes">ספר לנו עליך</label>
+                <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+            </div>
+            <div class="frm-input">
+                <button id="sub-frm">שליחה</button>
+            </div>
+            <input type="hidden" name="page" value="contactpage">
+            <input type="hidden" name="customerid" id="customerid" value="0">
+        </form>
+
+    </div>
+    <div class="wrap-footer">
+        <footer>
+            <div class="container">
+                <div class="copyrights">
+                    <p>
+                        האתר נבנה על ידי אוהד פישר וגל עוז במסגרת קורס תכנון ופיתוח בסביבת האינטרנט במחלקה למדעי המידע באוניברסיטת בר אילן
+                    </p>
+                    <p>
+                        האתר נצפה בדפדפן כרום
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

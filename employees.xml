@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="/css/employees.css"?>
+    <!DOCTYPE employee-list [
+    <!ELEMENT employee-list (employee*)>
+    <!ELEMENT employee (name,role,fulladdress?,languages,seniority)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT role (#PCDATA)>
+    <!ELEMENT fulladdress (city,(street,postcode)?)>
+    <!ELEMENT city (#PCDATA)>
+    <!ELEMENT street (#PCDATA)>
+    <!ELEMENT postcode (#PCDATA)>
+    <!ELEMENT languages (language+)>
+    <!ELEMENT language (#PCDATA)>
+    <!ELEMENT seniority (#PCDATA)>
+    <!ATTLIST employee dpt CDATA #REQUIRED>
+    ]>
+        <employee-list>
+            <employee dpt="R&amp;D">
+                <name>מאיר</name>
+                <role>מתכנת</role>
+                <fulladdress>
+                    <city>ירושלים</city>
+                    <street>האורגים 16</street>
+                    <postcode>12345</postcode>
+                </fulladdress>
+                <languages>
+                    <language>עברית</language>
+                </languages>
+                <seniority>1</seniority>
+            </employee>
+            <employee dpt="UX&amp;Ui">
+                <name>תמר</name>
+                <role>מאפיינת ומעצבת אתרים</role>
+                <fulladdress>
+                    <city>גבעתיים</city>
+                    <street>המעיין 20</street>
+                    <postcode>4433221</postcode>
+                </fulladdress>
+                <languages>
+                    <language>עברית</language>
+                    <language>ספרדית</language>
+                    <language>אנגלית</language>
+                </languages>
+                <seniority>2</seniority>
+            </employee>
+             <employee dpt="HR">
+                <name>רונה</name>
+                <role>השמת עובדים</role>
+                <fulladdress>
+                    <city>חולון</city>
+                </fulladdress>
+                <languages>
+                    <language>עברית</language>
+                    <language>איטלקית</language>
+                    <language>אנגלית</language>
+                    <language>ערבית</language>
+                    <language>רוסית</language>
+                </languages>
+                <seniority>5</seniority>
+            </employee>
+             <employee dpt="Data">
+                <name>דוד</name>
+                <role>בונה שאילתות</role>
+                <fulladdress>
+                    <city>רמת גן</city>
+                </fulladdress>
+                <languages>
+                    <language>עברית</language>
+                </languages>
+                <seniority>0</seniority>
+            </employee>
+            <employee dpt="Design">
+                <name>טליה</name>
+                <role>מעצבת</role>
+               <fulladdress>
+                    <city>הרצליה</city>
+                    <street>החרוזים 90</street>
+                    <postcode>9911991</postcode>
+                </fulladdress>
+                <languages>
+                    <language>עברית</language>
+                </languages>
+                <seniority>2</seniority>
+            </employee>
+             <employee dpt="Product">
+                <name>יוסי</name>
+                <role>מנהל מוצר</role>
+                <languages>
+                    <language>עברית</language>
+                    <language>ספרדית</language>
+                </languages>
+                <seniority>4</seniority>
+            </employee>
+
+        </employee-list>
